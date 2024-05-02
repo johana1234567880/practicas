@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REPRODUCTOR</title>
+
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album-rtl/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+	<link href="assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<script src="js/funciones.js"></script>
+	
+	<style type="text/css">
+		.botoncabecera{
+			background-color: whitesmoke;
+		}
+		.container{
+			background: orangered;
+		}
+		.cancion{
+			background-color: yellowgreen;
+		}
+		.musica{
+			background: orangered;
+		}
+	</style>
+
+</head>
+<body>
+<section class="row mt-3">
+<main class="col-md-5">
+
+<div class="container">
+	<div class="row justify-content-between">
+		<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-arrow-left"></i>
+				</div>  
+		</div>
+		<div class="col-auto botoncabecera">
+			<p class="d-none d-md-block d-lg-block">reproduciendo ahora</p>
+			<p class="d-block d-md-none d-lg-none">reproduciendo</p>
+		</div>
+		<div class="col-auto botoncabecera">
+				<div class="botones">
+					<i class="fa-solid fa-bars"></i>
+				</div> 
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="col">
+			<br><br>
+			<img src="oscar-maydon.jpg" width="150px" class="rounded-circle">
+		</div>
+	</div>
+
+	<div class="row text-center">
+		<div class="col">
+			<br><br>
+			<h2>Oscar Maydon</h2>
+			<h3>Elvira</h3> 
+			<br><br>
+		</div>
+	</div>
+
+	<div class="row">
+		
+		<div class="row justify-content-between">
+			<span class="col-3 nombremp3"></span>
+			<span class="col-3 text-end audioTime" data-attr="timer"></span>
+		</div>
+
+
+
+		<div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+ 	 	<div class="progress-bar progress-bar-striped progress-bar-animated updateProgress"></div>
+		</div>
+		
+	</div> 
+	<br><br>
+</div>
+<br>
+</main>
+
+	<aside class="musica col-md-5">
+<br>	
+		<div class="container">
+
+		<ul class="list-group mt-5 playlist">
+		  <li class="list-group-item" data-src="Cuerno Azulado - Natanael Cano X Gabito Ballesteros (Audio Official) (Nata Montana) Full Calidad.mp3">
+		  	<a href="#">Natanael Cano X Gabito Ballesteros - Cuerno Azulado</a>
+		  </li>
+		  <li class="list-group-item" data-src="Gabito Ballesteros - A Puro Dolor (Official Video).mp3">
+		  	<a href="#">Gabito Ballesteros - A Puro Dolor</a>
+		  </li>
+		  <li class="list-group-item" data-src="Natanael Cano  BZRP Music Sessions 59 (1).mp3">
+		  	<a href="#">Natanael Cano  BZRP Music Sessions 59</a>
+		  </li>
+		  <li class="list-group-item" data-src="Oscar Maydon x Gabito Ballesteros x Chino Pacas - Elvira [Official Video] (1).mp3">
+		  	<a href="#">Oscar Maydon x Gabito Ballesteros x Chino Pacas - Elvira</a>
+		  </li>
+		  <li class="list-group-item" data-src="Oscar Maydon x Junior H x Gabito Ballesteros - Skin De Bandida [Official Video].mp3">
+		  	<a href="#">Oscar Maydon x Junior H x Gabito Ballesteros - Skin De Bandida</a>
+		  </li>
+		</ul>
+
+		<hr>
+		</div>
+
+
+	</aside>
+
+</section>
+</body>
+</html>
